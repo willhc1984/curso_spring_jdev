@@ -28,7 +28,6 @@ public class Usuario implements Serializable{
 	private String email;
 	private String senha;
 	
-	@JsonIgnore
 	@OneToMany(mappedBy = "usuario", orphanRemoval = true, cascade = CascadeType.ALL)
 	private List<Telefone> telefones = new ArrayList<>();
 	
