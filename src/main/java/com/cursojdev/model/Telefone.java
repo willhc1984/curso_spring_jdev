@@ -11,6 +11,8 @@ import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 
 @Entity
 @Table(name = "tb_telefone")
@@ -23,6 +25,7 @@ public class Telefone implements Serializable{
 	private Long id;
 	private String numero;
 	
+	@JsonIgnore
 	@ManyToOne
 	private Usuario usuario;
 	
