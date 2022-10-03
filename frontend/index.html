@@ -19,7 +19,11 @@
                     url : "http://localhost:8080/usuarios",
                     method : "GET",
                 }).then(function(data, status, info){
-                    $("#teste").text("William");
+                    $("#teste").html(data[7].nome
+                     + " - " + data[7].email
+                     + " - " + data[7].senha
+                     + " - " + data[7].telefones[0].numero);
+                  
                 });
             }
         );
