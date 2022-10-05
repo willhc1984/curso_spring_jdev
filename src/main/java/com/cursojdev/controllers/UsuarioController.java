@@ -52,7 +52,7 @@ public class UsuarioController {
 	
 	@PutMapping("/{id}")
 	public ResponseEntity<Usuario> atualizar(@RequestBody Usuario usuario){
-		usuario = usuarioService.salvar(usuario);
+		usuario = usuarioService.atualizar(usuario);
 		return ResponseEntity.ok(usuario);
 	}
 	

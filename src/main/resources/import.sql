@@ -1,5 +1,5 @@
 INSERT INTO tb_usuario(nome, email, senha) VALUES('William', 'will@gmail.com','$2a$10$lmZZfS/Foly5nAVOm.9Nw.Xg0yWuJ3a/b.OxsFnnc8VFux74HZ/5.');
-INSERT INTO tb_usuario(nome, email, senha) VALUES('Maria', 'maria@gmail.com','1234');
+INSERT INTO tb_usuario(nome, email, senha) VALUES('Maria', 'maria@gmail.com','$2a$10$lmZZfS/Foly5nAVOm.9Nw.Xg0yWuJ3a/b.OxsFnnc8VFux74HZ/5.');
 INSERT INTO tb_usuario(nome, email, senha) VALUES('Pedro', 'pedro@gmail.com','1234');
 INSERT INTO tb_usuario(nome, email, senha) VALUES('Mario', 'mario@gmail.com','1234');
 INSERT INTO tb_usuario(nome, email, senha) VALUES('Ana Paula', 'ana@gmail.com','1234');

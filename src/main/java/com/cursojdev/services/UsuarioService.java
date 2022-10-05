@@ -35,4 +35,16 @@ public class UsuarioService {
 		return usuarioRepository.save(usuario);
 	}
 
+	public Usuario atualizar(Usuario usuario) {
+		Usuario usuarioTemp = usuarioRepository.findByEmail(usuario.getEmail());
+		
+		if(!usuarioTemp.getSenha().equals(usuario.getSenha())) {
+			String senhaCriptografa = new BCryptPasswordEncoder().encode(usuario.getSenha());
+			usuario.setSenha(senhaCriptografa);
+		}
+		
+		Usuario usuarioSalvo = usuarioRepository.save(usuario);		
+		return usuarioSalvo;
+	}
+
 }
