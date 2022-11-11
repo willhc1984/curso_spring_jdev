@@ -17,10 +17,11 @@ public class CursospringApiJdevApplication implements WebMvcConfigurer {
 		//System.out.println(new BCryptPasswordEncoder().encode("123"));
 	}
 	
-	public void addCorsMappings(CorsRegistry registry) {
-		registry.addMapping("/**").allowedMethods("GET", "POST", "PUT", "DELETE")
-				.allowedOrigins("http://127.0.0.1:5500");
-	}
+	/*
+	 * public void addCorsMappings(CorsRegistry registry) {
+	 * registry.addMapping("/**").allowedMethods("GET", "POST", "PUT", "DELETE")
+	 * .allowedOrigins("http://127.0.0.1:5500"); }
+	 */
 
 	/*
 	 * public void configure(WebSecurity web) throws Exception {
